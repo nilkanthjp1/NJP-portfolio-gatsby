@@ -1,5 +1,6 @@
 ---
 title: "Home"
+template: "under-construction"
 date: "2017-08-10"
 phases:
     - name: "Research"

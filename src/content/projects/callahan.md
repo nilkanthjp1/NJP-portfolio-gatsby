@@ -1,6 +1,7 @@
 ---
 title: "Home"
-date: "2017-08-11"
+date: "2017-08-10"
+template: "about"
 phases:
     - name: "Research"
     - desc: "Click to see a project heavily influenced by the research phase of my process."

@@ -1,6 +1,19 @@
 
 @import '../styles/global';
 
+main {
+	padding: 30px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&--column {
+		flex-flow:column nowrap;
+	}
+}
+
 section.home {
 
 	.icons {

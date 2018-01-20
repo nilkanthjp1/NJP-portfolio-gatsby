@@ -154,6 +154,11 @@ a {
 	}
 }
 
+.uppercase {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
 h1 {
 	@include h1;
 	text-align: center;
