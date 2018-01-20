@@ -19,7 +19,10 @@ const TemplateWrapper = ({ children, data }) => {
         meta={[
           { name: "description", content: data.site.siteMetadata.description }
         ]}
-      />
+      >
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </Helmet>
       <Header phases={Constants.phases} />
       <Typekit kitId="tzm4nvq" />
       {children()}
@@ -35,17 +38,17 @@ TemplateWrapper.propTypes = {
 
 export const query = graphql`
   query LayoutQuery {
-    site {
-      siteMetadata {
-        title
+          site {
+        siteMetadata {
+          title
         description
-      }
+        }
     }
     allMarkdownRemark {
-      edges {
+          edges {
         node {
           fields {
-            slug
+        slug
           }
         }
       }
